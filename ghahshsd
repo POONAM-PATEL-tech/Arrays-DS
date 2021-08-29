@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+int main(){
+    
+    int arr[2];     //Declaring array by specific size
+    
+    arr[0]=1;
+    arr[1]=2;
+   // arr[2]=3;
+    cout<<arr[0]<<" "<<arr[1]<<endl;// Accessing Element One By One
+    
+    int arr1[]={1,2,3,4,5};//Array Declaration By initializing Elements.
+    for(int i=0;i<5;i++){
+        cout<<arr1[i]<<" ";// Traverse Array by for loop 1st way.
+    }
+    cout<<endl;
+    
+    int arr2[5]={12,13,14};//Array with specific size and  initializing element
+    for(int i=0;i<5;i++)
+    {
+        cout<<i[arr2]<<" ";// 2nd way of traversing Array
+    }
+    // User Specific Array declaration and Traversing
+    int n;
+    cin>>n;
+    
+    if(n>0){
+        
+    int arr3[n]; 
+    for(int i=0;i<n;i++){
+        cin>>arr3[i];
+        cout<<" ";
+    }
+    for(int i=0;i<n;i++){
+        cout<<arr3[i]<<" ";
+    }
+}
+    
+    return 0;
+}
