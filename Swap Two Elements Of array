@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int arr[2];
+    arr[0]=1;
+    arr[1]=2;
+    cout<<"Before Swap:"<<endl;
+    cout<<arr[0]<<" "<<arr[1]<<endl;
+    int temp=arr[0];
+    arr[0]=arr[1];
+    arr[1]=temp;
+    cout<<"After Swap:"<<endl;
+    cout<<arr[0]<<" "<<arr[1];
+    return 0;
+}
