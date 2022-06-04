@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int palindrome(int arr[],int n){
+    for(int i=0;i<n;i++){
+        int remainder;
+        int reverse=0;
+        int num=arr[i];
+        while(num>0){
+            remainder=num%10;
+            reverse=reverse*10+remainder;
+            num=num/10;
+        }if(reverse!=arr[i]){
+            return 0;
+        }
+
+    }
+    return 1;
+}
+int main(){
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    cout<<palindrome(arr,n);
+
+    return 0;
+}
